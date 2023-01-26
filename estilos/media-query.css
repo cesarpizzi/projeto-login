@@ -2,7 +2,7 @@
 
 
 
-
+/* Tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
     body {
@@ -22,9 +22,13 @@
        float: right;
        width: 70%;
     }
-
+    div.campo, form input[type=submit], form a {
+        margin: 5px auto;
+        width: 70%;
+    }
 }
 
+/* PC e telas grandes */
 @media screen and (min-width: 992px) {
     
     body {
@@ -34,13 +38,22 @@
         width: 950px;
     }
     section#login > div#imagem {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
     section#login > div#formulario {
-        float: right;
+        float: left;
         width: 50%;
     }
-    
+    div#formulario h1 {
+        font-size: 2em;
+    }
+    div#formulario p {
+        font-size: 1.1em;
+    }
+    div.campo, form input[type=submit], form a {
+        width: 70%;
+        margin: 5px auto;
+    }
 }
